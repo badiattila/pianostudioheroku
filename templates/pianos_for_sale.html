@@ -1,0 +1,31 @@
+{% extends 'base.html' %} {% block content %}
+<div class="op" id="sale">
+    <h2>Pianos for sale</h2>
+    <p></p>
+    <div class="row s12 op">
+        {%for i in range(0, len)%}
+        <div class="col s6 m3">
+            <div class="card left">
+                <div class="card-image">
+                    <img class="materialboxed" src="{{url_for('file', file_name=pianos[i].file_name)}}">
+                    <span class="card-title">
+                    </span>
+                </div>
+                <div class="card-content">
+                    <p><strong>Brand:</strong> {{pianos[i].brand}}</p>
+                    <p><strong>Price:</strong> EUR {{pianos[i].price}}.-</p>
+                    <p><strong>Age:</strong> {{pianos[i].age}} y.</p>
+                    <p><strong>Description:</strong> {{pianos[i].description}}</p>
+                </div>
+                <div class="inline_actions">
+                    <a href="{{url_for('delete_piano', piano_id=pianos[i]._id)}}" class="waves-effect waves-light btn btn_small red left">Del</a>
+                    <a href="{{url_for('edit_piano', piano_id=pianos[i]._id)}}" class="waves-effect waves-light btn btn_small right">Edit</a>
+                </div>
+            </div>
+        </div> {% if i+1 == 4 %}
+    </div>
+    <div class="row s12 op">
+        {% endif %} {% endfor %}
+    </div>
+</div>
+{% endblock %}

@@ -1,6 +1,7 @@
 sudo snap install heroku --classic
 sudo pip3 install flask-pymongo
 sudo pip3 install dnspython
+sudo pip3 install Flask-Mail
 sudo pip3 freeze --local > requirements.txt
 echo web: python app.py > Procfile
 mkdir templates

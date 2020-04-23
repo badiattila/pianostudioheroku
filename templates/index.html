@@ -1,0 +1,47 @@
+{% extends 'base.html' %} {% block content %}
+
+<div class="op">
+    <div class="row intro">
+        <div class="col s12">
+            <div class="">
+                <h2>Piano Studio</h2>
+                <img src="{{url_for('static', filename='pictures/4k-wallpaper-close-up-fingers-1246437.jpg')}}" alt="Piano Studio" />
+                <p>Piano Studio Kft. is family owned and operated since 2008. József Badi, master of piano making, with over 30 years experience restoring and selling high quality pianos. Now works closely with a team of experts to provide the best in town
+                    piano services at an afordable price.</p>
+                <p>We’re here to help bringing a piano into your home. We deliver your piano, provide professional tuning, maintenance and renovations.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row op">
+        <div class="col s6">
+            <h3>Piano Tuning</h3>
+            <p>Most pianos should be tuned twice a year. Pianos that are used for performance or for recording will need to be tuned more often. Temperature and humidity changes will affect how long your piano stays in tune.</p>
+            <p><a class="waves-effect waves-light btn btn_mid" href="{{url_for('services')}}" role="button">Tuning</a></p>
+        </div>
+        <div class="col s6">
+            <h3>Repair & Restoration</h3>
+            <p>In most cases a complete restoration of a valuable piano will cost much less than the price of a new one! A complete restoration includes rebuilding and refinishing (both might be ordered separately too).</p>
+            <p><a class="waves-effect waves-light btn btn_mid" href="{{url_for('services')}}" role="button">Repair</a></p>
+        </div>
+    </div>
+    <div class="row op">
+        <div class="col s6">
+            <h3>Rent a Piano</h3>
+            <p>From beginner to seasoned pros, we have a variety of pianos for every skill level and budget. Short and log term rentals. We also cather for events and festivals. </p>
+            <p><a class="waves-effect waves-light btn btn_mid" href="{{url_for('services')}}" role="button">Rent</a></p>
+        </div>
+        <div class="col s6">
+            <h3>Buy a Piano</h3>
+            <p>We will buy your piano or upright piano at a fair price. The value of your piano depends on the brand, condition and age of it. Have our experts determine these factors for you!</p>
+            <p><a class="waves-effect waves-light btn btn_mid" href="{{url_for('pianos_for_sale')}}" role="button">Buy</a></p>
+        </div>
+    </div>
+    <div class="row op">
+        <div class="col s6">
+            <h3>Sell a Piano</h3>
+            <p>We will buy your piano or upright piano at a fair price. The value of your piano depends on the brand, condition and age of it. Have our experts determine these factors for you!</p>
+            <p><a class="waves-effect waves-light btn btn_mid" href="{{url_for('createadd')}}" role="button">Sell</a></p>
+        </div>
+    </div>
+</div>
+{% endblock %}

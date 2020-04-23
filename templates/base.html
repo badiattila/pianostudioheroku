@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <!-- Font awsome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <!-- Hover -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
+    <!-- Material icons by Google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <!-- Specific Css for this website -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}" type="text/css" />
+
+    <title>Piano Studio Kft. - Services - </title>
+    <link href="{{url_for('static', filename='pictures/favicon.ico')}}" rel="shortcut icon" type="image/x-icon" />
+    <meta name="description" content="Piano rental, tuning and repair - Piano Studio Kft." />
+    <meta name="keywords" content="Piano rental,piano tuning,piano repair,piano studio" />
+    <meta name="copyright" content="Piano Studio Kft." />
+    <meta name="author" content="Attila Badi/Piano Studio Kft." />
+    <meta name="email" content="info@pianostudio.hu" /> {% block head %} {% endblock %}
+
+
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="nav-wrapper redbg">
+                    <a href="{{url_for('index')}}" class="brand-logo">Piano Studio Kft.</a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+                    <ul id="nav-mobile" class="right hide-on-med-and-down">
+                        <li><a href="{{url_for('index')}}">Home</a></li>
+                        <li><a href="{{url_for('services')}}">Services</a></li>
+                        <li><a href="{{url_for('rent')}}">Rent</a></li>
+                        <li><a href="{{url_for('pianos_for_sale')}}">Buy</a></li>
+                        <li><a href="{{url_for('createadd')}}">Sell</a></li>
+                        <li><a href="{{url_for('galery')}}">Galery</a></li>
+                        <li><a href="{{url_for('contact')}}">Contact</a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li><a href="{{url_for('index')}}">Home</a></li>
+                        <li><a href="{{url_for('services')}}">Services</a></li>
+                        <li><a href="{{url_for('rent')}}">Rent</a></li>
+                        <li><a href="{{url_for('pianos_for_sale')}}">Buy</a></li>
+                        <li><a href="{{url_for('createadd')}}">Sell</a></li>
+                        <li><a href="{{url_for('galery')}}">Galery</a></li>
+                        <li><a href="{{url_for('contact')}}">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
+        {% block content %} {% endblock %}
+        <hr>
+        <footer class="footer redbg">
+            <p>&copy; Piano Studio Kft. 2008-2020 - Tel: +36 30 961 8788 - E-mail: info@pianostudio.hu
+                <a target="_blank" href="https://www.facebook.com/zongoraterem"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a target="_blank" href="https://www.instagram.com/pianostudiokft"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>-->
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('.modal').modal();
+            $('.dropdown-trigger').dropdown({ hover: false });
+            $('.collapsible').collapsible();
+            $('select').material_select();
+            $('.button-collapse').sideNav();
+            $('.materialboxed').materialbox();
+        });
+    </script>
+    {% block bottom %} {% endblock %}
+
+</body>
+
+</html>

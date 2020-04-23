@@ -1,0 +1,99 @@
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+/* Picture formatting for gallery and teaser pictures */
+
+.right-teaser {
+  padding: 1px;
+  border: 1px solid #4c0303;
+  float: right;
+  margin: 0 0 1em 1em;
+  width: 12vw;
+}
+
+.galery-pic {
+  padding: 1px;
+  border: 1px solid #4c0303;
+  margin: 0 0 1em 1em;
+  width: 12vw;
+}
+
+.btn_small {
+  height: 24px;
+  width: 60px;
+  line-height: 24px;
+  margin: 5px 5px;
+  padding: 0 0.5em;
+}
+
+.btn_mid {
+  height: 24px;
+  width: 120px;
+  line-height: 24px;
+  margin: 5px 5px;
+  padding: 0 0.5em;
+}
+
+.footer {
+  color: white;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  text-align: center;
+}
+
+.redbg {
+  background-color: #4c0303;
+}
+
+.nav-wrapper {
+  padding-left: 10px;
+}
+
+/* Opacity classes for different elements */
+
+.op {
+  background: rgba(76, 3, 3, 0.1);
+  color: rgba(76, 3, 3);
+  padding: 35px;
+  margin-bottom: 15px;
+}
+
+.dropdown-content {
+  width: max-content !important;
+  height: auto !important;
+}
+
+/* ID based background behaviour */
+
+.intro {
+  position: relative;
+  overflow: hidden;
+  color: rgba(76, 3, 3);
+  padding: 35px;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0; 
+}
+
+.intro img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  opacity: 0.2;
+}
+
+.intro h2 p {
+  padding: 150px;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+  color: #fff;
+}

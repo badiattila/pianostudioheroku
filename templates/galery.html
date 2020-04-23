@@ -1,0 +1,15 @@
+{% extends 'base.html' %} {% block head %} {% endblock %} {% block content %}
+
+<!-- Contact Form  -->
+<div class="op" id="galery">
+  <h2>Galery</h2>
+  <div class="row op" id="sample">
+  </div>
+</div>
+{% endblock %} {% block bottom %}
+<!-- Instagram helper js for this website -->
+<script src="{{url_for('static', filename='js/instagram-information.js')}}"></script>
+<script type="text/javascript">
+  $(window).on("load", fetchInstagramInformation());
+</script>
+{% endblock %}

@@ -1,0 +1,55 @@
+{% extends 'base.html' %} {% block head %}
+
+{% endblock %} {% block content %}
+
+<!-- Contact Form  -->
+<div class="op" id="contact">
+  <h2>Contact us </h2>
+
+  <form action="{{ url_for('send_mail') }}" method="POST" enctype="multipart/form-data" class="col s12 op">
+    <div class="row">
+      <div class="input-field col s4">
+        <i class="material-icons prefix">person</i>
+        <input id="user_fname" name="user_fname" type="text" class="validate" required>
+        <label for="InputFirstName">First name</label>
+      </div>
+      <div class="input-field col s4">
+        <i class="material-icons prefix">person_outline</i>
+        <input id="user_sname" name="user_sname" type="text" class="validate" required>
+        <label for="InputLastName">Last name</label>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">email</i>
+        <label for="InputEmail1">Email address</label>
+        <input type="email" class="validate" id="user_email" aria-describedby="emailHelp" name="user_email" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12">
+        <i class="material-icons prefix">fingerprint</i>
+        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="input-field col s12">
+        <i class="material-icons prefix">description</i>
+        <label for="InputMessage">Message</label>
+        <textarea class="materialize-textarea" id="message" name="message"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <input type="submit" value="Send" class="btn btn_mid ">
+      </div>
+    </div>
+  </form>
+
+</div>
+
+{% endblock %}

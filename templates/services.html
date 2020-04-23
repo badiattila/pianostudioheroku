@@ -1,0 +1,51 @@
+{% extends 'base.html' %} {% block content %}
+
+<!-- Services -->
+<div class="op" id="services">
+    <h2>Services</h2>
+    <p></p>
+
+    <div>
+        <div class="op" id="tuning">
+            <h3>Piano Tuning</h3>
+            <img class="right-teaser" src="{{url_for('static', filename='pictures/pins.jpg')}}" alt="Piano Tuning" />
+            <p>Piano Studio Kft offers a piano tuning service within 24 hours in most cases.</p>
+
+            <p>We offer up to 30% discount if more pianos are ordered at the same place or in case of a long term contract.</p>
+
+            <h4>How many times should I have my piano tuned?</h4>
+            <p>Most pianos should be tuned twice a year. Pianos that are used for performance or for recording will need to be tuned more often.</p>
+
+            <h4>How long does it take?</h4>
+            <p>The tuning procedure takes about one and a half hours. The technician also inspects the piano while tuning and warns you in time if your piano needs extra care.</p>
+        </div>
+        <div class="op" id="renovation">
+            <h3>Renovation</h3>
+            <img class="right-teaser" src="{{url_for('static', filename='pictures/st.jpg')}}" alt="Piano Pins" />
+            <p>In most cases a complete restoration of a valuable piano will cost much less than the price of a new one! A complete restoration includes internal renovation and refinishing (both might be ordered separately too).</p>
+
+            <h4>Internal renovation</h4>
+            <p>The full process of renovating the internal parts of a piano takes about two weeks for a technician and includes the following main steps:</p>
+            <ul>
+                <li>Pin block replacement</li>
+                <li>Refinishing the plate</li>
+                <li>Repairs done to the bridges and sound board</li>
+                <li>Refinishing the sound board</li>
+                <li>Restringing with new strings (hand-wound bass strings, only the finest quality german iron strings)</li>
+                <li>Reconditioning the piano action (new set of hammers, etc...)</li>
+            </ul>
+            <h4>Refinishing</h4>
+            <p>In order to bring the piano to it's original look we usually do the following:</p>
+            <ul>
+                <li>Strip the old finish down</li>
+                <li>Sand entire piano and parts</li>
+                <li>Correct any harm done to the wood during the years</li>
+                <li>Apply color</li>
+                <li>Apply lacquer or polyester finish</li>
+                <li>Install new hardware (pedals, hinges, knobs, etc...)</li>
+            </ul>
+            <p>Please contact us for a concrete offer!</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
