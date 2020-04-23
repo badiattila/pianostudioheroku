@@ -17,6 +17,6 @@ git commit -m "initial push with Procfile for Heroku"
 --- Done to this point
 heroku login
 heroku apps
-heroku git:remote -a task-manager-attila
+heroku git:remote -a piano-studio
 git push heroku master
 heroku ps:scale web=1
