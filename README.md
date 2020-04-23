@@ -7,7 +7,7 @@ It focuses on the owners (with a galery using instagram integration), services, 
 
 
 ## Demo
-The latest heroku active demo can be found [here]()
+The latest heroku active demo can be found [here](https://piano-studio.herokuapp.com/)
 
 The live outdated version of the webpage can be found [here](http://www.pianostudio.hu)
 A live demo of the previous version using bootstrap can be found [here](https://badiattila.github.io/pianostudio/).
