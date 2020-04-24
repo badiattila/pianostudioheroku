@@ -5,10 +5,11 @@ function mediaInformationHTML(userData) {
 
     var listItemsHTML = userData.data.map(function(media) {
 
-        return `<div class="col s6 m3"><img class="materialboxed galery-pic" src="${media.media_url}" ></div>`;
+        return `<div class="col s3"><img class="materialboxed galery-pic" src="${media.media_url}" ></div>`;
     });
 
-    return `${listItemsHTML.join("\n")}`;
+    return `${joinObj(listItemsHTML)}`;
+
 }
 
 
@@ -25,4 +26,19 @@ function fetchInstagramInformation(event) {
         }
     );
 
+}
+
+function joinObj(a) {
+    var out = [];
+    out.push('<h2>Galery</h2>');
+    out.push('<div class="row op s12">');
+    for (var i = 0; i < a.length; i++) {
+        out.push(a[i]);
+        if ((i + 1) % 4 == 0) {
+            out.push('</div>');
+            out.push('<div class="row op s12">');
+        }
+    }
+    out.push('</div>');
+    return out.join("\n");
 }

@@ -21,6 +21,7 @@
   border: 1px solid #4c0303;
   margin: 0 0 1em 1em;
   width: 12vw;
+  vertical-align: middle;
 }
 
 .btn_small {
@@ -77,7 +78,7 @@
   padding: 35px;
   margin-bottom: 0;
   margin-left: 0;
-  margin-right: 0; 
+  margin-right: 0;
 }
 
 .intro img {
