@@ -1,3 +1,5 @@
+/* Floating to left and right */
+
 .left {
   float: left;
 }
@@ -16,13 +18,26 @@
   width: 12vw;
 }
 
+.logo-pic {
+  padding: 1px;
+  border: 1px solid #4c0303;
+  float: right;
+  margin: 0 0 1em 1em;
+  width: 8vw;
+}
+
 .galery-pic {
   padding: 1px;
   border: 1px solid #4c0303;
   margin: 0 0 1em 1em;
+  /*max-width: 12vw;*/
+  /*max-height: 12vw;*/
   width: 12vw;
+  height: 12vw;
   vertical-align: middle;
 }
+
+/* Button formatting to blend in color scheme + hover effect with opacity */
 
 .btn_small {
   height: 24px;
@@ -40,6 +55,18 @@
   padding: 0 0.5em;
 }
 
+.btn {
+  background: rgba(76, 3, 3, 0.6);
+  color: white;
+}
+
+.btn:hover {
+  background: rgba(76, 3, 3, 0.9);
+  color: white;
+}
+
+/*  A simple footer formatting  */
+
 .footer {
   color: white;
   opacity: 0.8;
@@ -47,9 +74,13 @@
   text-align: center;
 }
 
+/*Setting a class to set main color scheme for any background*/
+
 .redbg {
-  background-color: #4c0303;
+  background-color: rgb(76, 3, 3);
 }
+
+/*Shift brand just a bit to avoid sticking to left */
 
 .nav-wrapper {
   padding-left: 10px;
@@ -64,14 +95,9 @@
   margin-bottom: 15px;
 }
 
-.dropdown-content {
-  width: max-content !important;
-  height: auto !important;
-}
-
 /* ID based background behaviour */
 
-.intro {
+.background-img-container {
   position: relative;
   overflow: hidden;
   color: rgba(76, 3, 3);
@@ -81,20 +107,28 @@
   margin-right: 0;
 }
 
-.intro img {
+.background-img-container>.img-to-back {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
   height: auto;
   z-index: 1;
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
-.intro h2 p {
-  padding: 150px;
-  text-align: center;
+.background-img-container>p,
+h1,
+h2,
+h3,
+h4 {
   z-index: 2;
   position: relative;
-  color: #fff;
+}
+
+/*Just a bit of adjustment to dropdowns */
+
+.dropdown-content {
+  width: max-content !important;
+  height: auto !important;
 }

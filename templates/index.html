@@ -1,18 +1,20 @@
 {% extends 'base.html' %} {% block content %}
 
 <div class="op">
-    <div class="row intro">
+    <div class="row background-img-container">
+        <img class="img-to-back" src="{{url_for('static', filename='pictures/4k-wallpaper-close-up-fingers-1246437.jpg')}}" alt="Piano Studio" />
         <div class="col s12">
-            <div class="">
+            <div>
                 <h2>Piano Studio</h2>
-                <img src="{{url_for('static', filename='pictures/4k-wallpaper-close-up-fingers-1246437.jpg')}}" alt="Piano Studio" />
+                <img class="logo-pic" src="{{url_for('static', filename='pictures/index.png')}}" alt="Piano Studio" />
                 <p>Piano Studio Kft. is family owned and operated since 2008. József Badi, master of piano making, with over 30 years experience restoring and selling high quality pianos. Now works closely with a team of experts to provide the best in town
                     piano services at an afordable price.</p>
                 <p>We’re here to help bringing a piano into your home. We deliver your piano, provide professional tuning, maintenance and renovations.</p>
             </div>
         </div>
     </div>
-    <div class="row op">
+    <div class="row background-img-container">
+        <img class="img-to-back" src="{{url_for('static', filename='pictures/compose-entertainment-music-14548.jpg')}}" alt="Piano Studio" />
         <div class="col s6">
             <h3>Piano Tuning</h3>
             <p>Most pianos should be tuned twice a year. Pianos that are used for performance or for recording will need to be tuned more often. Temperature and humidity changes will affect how long your piano stays in tune.</p>
@@ -24,7 +26,8 @@
             <p><a class="waves-effect waves-light btn btn_mid" href="{{url_for('services')}}" role="button">Repair</a></p>
         </div>
     </div>
-    <div class="row op">
+    <div class="row background-img-container">
+        <img class="img-to-back" src="{{url_for('static', filename='pictures/black-and-white-blur-document-164821.jpg')}}" alt="Piano Studio" />
         <div class="col s6">
             <h3>Rent a Piano</h3>
             <p>From beginner to seasoned pros, we have a variety of pianos for every skill level and budget. Short and log term rentals. We also cather for events and festivals. </p>
@@ -36,7 +39,8 @@
             <p><a class="waves-effect waves-light btn btn_mid" href="{{url_for('pianos_for_sale')}}" role="button">Buy</a></p>
         </div>
     </div>
-    <div class="row op">
+    <div class="row background-img-container">
+        <img class="img-to-back" src="{{url_for('static', filename='pictures/compose-music-piano-5934.jpg')}}" alt="Piano Studio" />
         <div class="col s6">
             <h3>Sell a Piano</h3>
             <p>We will buy your piano or upright piano at a fair price. The value of your piano depends on the brand, condition and age of it. Have our experts determine these factors for you!</p>

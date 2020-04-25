@@ -30,7 +30,7 @@ function fetchInstagramInformation(event) {
 
 function joinObj(a) {
     var out = [];
-    out.push('<h2>Gallery</h2>');
+    out.push('<h3>Gallery</h3>');
     out.push('<div class="row op s12">');
     for (var i = 0; i < a.length; i++) {
         out.push(a[i]);
