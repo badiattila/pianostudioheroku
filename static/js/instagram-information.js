@@ -5,7 +5,7 @@ function mediaInformationHTML(userData) {
 
     var listItemsHTML = userData.data.map(function(media) {
 
-        return `<div class="col s3"><img class="materialboxed galery-pic" src="${media.media_url}" ></div>`;
+        return `<div class="col s3"><img class="materialboxed galery-pic" src="${media.media_url}" alt="Piano Studio Instagram" ></div>`;
     });
 
     return `${joinObj(listItemsHTML)}`;
