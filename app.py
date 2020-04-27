@@ -7,11 +7,12 @@ from flask_mail import Mail, Message
 app = Flask(__name__)
 
 app.config["MONGO_DBNAME"] = 'piano_studio'
-app.config["MONGO_URI"] = 'mongodb://attilabadi:K00nK00n1234@mycodeinstitutecluster-shard-00-00-wpsfr.mongodb.net:27017,mycodeinstitutecluster-shard-00-01-wpsfr.mongodb.net:27017,mycodeinstitutecluster-shard-00-02-wpsfr.mongodb.net:27017/piano_studio?ssl=true&replicaSet=MyCodeInstituteCluster-shard-0&authSource=admin&retryWrites=true&w=majority'
+app.config["MONGO_URI"] = os.environ.get('MONGOURI')
+# app.config["MONGO_URI"] = 'mongodb://attilabadi:K00nK00n1234@mycodeinstitutecluster-shard-00-00-wpsfr.mongodb.net:27017,mycodeinstitutecluster-shard-00-01-wpsfr.mongodb.net:27017,mycodeinstitutecluster-shard-00-02-wpsfr.mongodb.net:27017/piano_studio?ssl=true&replicaSet=MyCodeInstituteCluster-shard-0&authSource=admin&retryWrites=true&w=majority'
 mongo = PyMongo(app)
 
 app.config.update(
-	DEBUG=True,
+	DEBUG=False,
 	#EMAIL SETTINGS
 	MAIL_SERVER='mail.pianostudio.hu',
 	MAIL_PORT=465,
